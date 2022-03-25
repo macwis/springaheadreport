@@ -17,10 +17,10 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 class SpringAheadCrawler:
-    company_login = os.environ.get("SPRINGAHEAD_LOGIN")
-    username = os.environ.get("SPRINGAHEAD_USERNAME")
-    password = os.environ.get("SPRINGAHEAD_PASSWORD")
-    file_title = os.environ.get("SPRINGAHEAD_FILE_TITLE")
+    company_login = os.environ["SPRINGAHEAD_COMPANY"]
+    username = os.environ["SPRINGAHEAD_USERNAME"]
+    password = os.environ["SPRINGAHEAD_PASSWORD"]
+    file_title = os.environ["SPRINGAHEAD_FILETITLE"]
     no_of_weeks_backward = 4
     headless = True
 
